@@ -33,6 +33,82 @@ body::before {
 
   z-index: -1;
 }
+
+/* =========================
+   CYBER GRID + LASER SYSTEM
+========================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  /* GRID KOTAK */
+  background-image:
+    linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+  animation: gridMove 25s linear infinite;
+}
+
+/* LASER SCAN EFFECT */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(0,255,255,0) 40%,
+    rgba(0,255,255,0.25) 50%,
+    rgba(0,255,255,0) 60%,
+    transparent 100%
+  );
+
+  animation: laserScan 4s linear infinite;
+}
+
+/* OPTIONAL: background image layer */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.25;
+  filter: blur(2px);
+}
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes gridMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(60px, 60px);
+  }
+}
+
+@keyframes laserScan {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 /* =========================
    CONTAINER
 ========================= */
