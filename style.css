@@ -30,7 +30,7 @@ header {
   text-align: center;
   color: #fff;
   overflow: hidden;
-  background: url('background.jpg') center/cover no-repeat fixed;
+  background: url('assets/images/background.jpg') center/cover no-repeat fixed;
 }
 
 /* BLUR LAYER */
