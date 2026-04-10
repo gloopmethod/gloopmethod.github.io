@@ -47,7 +47,10 @@ body::before {
 ========================= */
 header {
   position: relative;
-  height: 340px;
+  min-height: 200px;
+  max-height: 260px;
+  height: 28vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +75,7 @@ header::after {
 header .container {
   position: relative;
   z-index: 2;
+  padding: 10px 0; 
 }
 
 /* BRAND TITLE (G-LOOP SIGNATURE) */
