@@ -35,7 +35,7 @@ body::before {
 }
 
 /* =========================
-   CYBER GRID + LASER SYSTEM
+   CYBER GRID (MOVING ONLY)
 ========================= */
 
 body::before {
@@ -45,37 +45,16 @@ body::before {
   z-index: -2;
   pointer-events: none;
 
-  /* GRID KOTAK */
   background-image:
     linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px);
 
   background-size: 60px 60px;
 
-  animation: gridMove 25s linear infinite;
+  animation: gridMove 20s linear infinite;
 }
 
-/* LASER SCAN EFFECT */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(0,255,255,0) 40%,
-    rgba(0,255,255,0.25) 50%,
-    rgba(0,255,255,0) 60%,
-    transparent 100%
-  );
-
-  animation: laserScan 4s linear infinite;
-}
-
-/* OPTIONAL: background image layer */
+/* OPTIONAL BACKGROUND IMAGE LAYER */
 html::before {
   content: "";
   position: fixed;
@@ -88,7 +67,7 @@ html::before {
 }
 
 /* =========================
-   ANIMASI
+   ANIMASI GRID
 ========================= */
 
 @keyframes gridMove {
@@ -99,16 +78,6 @@ html::before {
     transform: translate(60px, 60px);
   }
 }
-
-@keyframes laserScan {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
 /* =========================
    CONTAINER
 ========================= */
