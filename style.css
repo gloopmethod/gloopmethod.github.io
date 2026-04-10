@@ -5,12 +5,26 @@
   box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY (APPLE CLEAN + CYBER GLOW) */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #0f172a;
-  color: #e5e7eb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #0f172a;
   line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* CYBER NEON BACKGROUND GLOW */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 245, 255, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(255, 0, 255, 0.12), transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(0, 255, 180, 0.10), transparent 50%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* CONTAINER */
@@ -20,7 +34,7 @@ body {
   padding: 20px;
 }
 
-/* ================= HEADER (PARALLAX + BLUR) ================= */
+/* ================= HEADER ================= */
 header {
   position: relative;
   height: 320px;
@@ -28,26 +42,23 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
   overflow: hidden;
-  background: url('assets/images/background.jpg') center/cover no-repeat fixed;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-/* BLUR LAYER */
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(1px);
-  background: rgba(255,255,255,0.1);
-}
-
-/* OVERLAY */
+/* HEADER OVERLAY CYBER */
 header::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 245, 255, 0.12),
+    rgba(255, 0, 255, 0.10),
+    rgba(255, 255, 255, 0.4)
+  );
 }
 
 /* ISI */
@@ -58,12 +69,15 @@ header .container {
 
 header h1 {
   font-size: 34px;
-  color: #38bdf8;
+  color: #0f172a;
+  text-shadow:
+    0 0 10px rgba(0, 245, 255, 0.25),
+    0 0 20px rgba(255, 0, 255, 0.15);
   margin-bottom: 10px;
 }
 
 header p {
-  color: #e5e7eb;
+  color: #475569;
   font-size: 15px;
 }
 
@@ -73,7 +87,7 @@ nav {
 }
 
 nav a {
-  color: #e5e7eb;
+  color: #0f172a;
   text-decoration: none;
   margin: 0 10px;
   font-size: 14px;
@@ -81,7 +95,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #38bdf8;
+  color: #00bcd4;
 }
 
 /* ================= HERO ================= */
@@ -96,7 +110,7 @@ nav a:hover {
 }
 
 .hero p {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 /* ================= BUTTON ================= */
@@ -104,29 +118,31 @@ nav a:hover {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #38bdf8;
-  color: #020617;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #fff;
   text-decoration: none;
-  border-radius: 8px;
   transition: 0.3s;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.25);
 }
 
 .btn:hover {
-  background: #0ea5e9;
+  background: linear-gradient(90deg, #00f5ff, #ff00ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
 }
 
 /* ================= SECTION ================= */
 .section {
   padding: 60px 20px;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 26px;
-  color: #38bdf8;
-  text-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+  color: #0f172a;
 }
 
 /* ================= TEXT ================= */
@@ -136,16 +152,17 @@ p {
 
 /* HIGHLIGHT */
 .highlight {
-  color: #38bdf8;
+  color: #00bcd4;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
 }
 
-/* QUOTE (AUTHORITY LOOK) */
+/* QUOTE */
 .quote {
-  border-left: 4px solid #38bdf8;
+  border-left: 4px solid #00bcd4;
   padding-left: 15px;
   margin: 20px 0;
-  color: #94a3b8;
+  color: #475569;
   font-style: italic;
 }
 
@@ -158,19 +175,22 @@ li {
   margin-bottom: 6px;
 }
 
-/* ================= CARD ================= */
+/* ================= CARD (APPLE GLASS + NEON) ================= */
 .card {
-  background: #020617;
+  background: rgba(255, 255, 255, 0.75);
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #1e293b;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 245, 255, 0.25);
   margin-bottom: 20px;
+  backdrop-filter: blur(12px);
   transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: #38bdf8;
+  transform: translateY(-6px);
+  border-color: rgba(255, 0, 255, 0.35);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.10);
 }
 
 /* ================= GRID ================= */
@@ -196,7 +216,7 @@ li {
 footer {
   text-align: center;
   padding: 25px;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid rgba(0,0,0,0.08);
   color: #64748b;
   font-size: 14px;
 }
@@ -206,7 +226,6 @@ footer {
 
   header {
     height: 260px;
-    background-attachment: scroll; /* parallax off biar smooth di HP */
   }
 
   header h1 {
@@ -222,50 +241,44 @@ footer {
   }
 }
 
-/* =========================
-   IMAGE
-========================= */
-
+/* ================= IMAGE ================= */
 .profile-img {
   display: block;
   margin: 25px auto;
   width: 160px;
   border-radius: 50%;
-  border: 2px solid #38bdf8;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  border: 2px solid #00bcd4;
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
   transition: 0.3s;
 }
 
-/* HERO INTRO BLOCK */
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* HERO INTRO */
 .hero-intro {
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* TAGLINE */
 .hero-tag {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-/* DESKRIPSI */
 .hero-desc {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 15px;
   margin-bottom: 5px;
 }
 
-/* LINK */
 .hero-link a {
-  color: #38bdf8;
+  color: #00bcd4;
   text-decoration: none;
 }
 
 .hero-link a:hover {
   text-decoration: underline;
-}
-
-.profile-img:hover {
-  transform: scale(1.05);
 }
