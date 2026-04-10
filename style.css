@@ -305,9 +305,18 @@ footer {
   }
 }
 
-h1, h2 {
-  color: #00f5ff !important;
-  text-shadow: 0 0 6px #00f5ff,
-               0 0 12px #00f5ff,
-               0 0 18px rgba(0, 245, 255, 0.6);
+h1 {
+  color: #00f5ff;
+  text-shadow:
+    0 0 4px #00f5ff,
+    0 0 14px #00f5ff,
+    0 0 28px rgba(0, 245, 255, 0.8);
+}
+
+h2 {
+  color: #00f5ff;
+  text-shadow:
+    0 0 3px #00f5ff,
+    0 0 10px rgba(0, 245, 255, 0.7);
+  opacity: 0.95;
 }
