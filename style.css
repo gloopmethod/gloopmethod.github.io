@@ -304,3 +304,10 @@ footer {
     padding: 40px 15px;
   }
 }
+
+h1, h2 {
+  color: #00f5ff !important;
+  text-shadow: 0 0 6px #00f5ff,
+               0 0 12px #00f5ff,
+               0 0 24px rgba(0, 245, 255, 0.6);
+}
