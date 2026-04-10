@@ -38,8 +38,8 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(4px);
-  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  background: rgba(0,0,0,0.2);
 }
 
 /* OVERLAY */
