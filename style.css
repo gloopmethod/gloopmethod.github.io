@@ -26,10 +26,10 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background: rgba(11, 18, 32, 0.55);
+  background: rgba(0, 0, 0, 0.55);
 
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(4px);
 
   z-index: -1;
 }
@@ -56,7 +56,7 @@ header {
   justify-content: center;
   text-align: center;
 
-  background: url('assets/images/background.jpg') center/cover no-repeat;
+  background: url('assets/images/body.jpg') center/cover no-repeat;
 }
 
 /* DARK SEO OVERLAY */
