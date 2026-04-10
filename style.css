@@ -13,10 +13,9 @@
 ========================= */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  background: #070b14;
-  color: #e5e7eb;
+  background: #0b1220;
+  color: #e2e8f0;
   line-height: 1.7;
-  overflow-x: hidden;
 }
 
 /* SUBTLE G-LOOP CYBER GLOW */
@@ -25,11 +24,10 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(0, 245, 255, 0.06), transparent 45%),
-    radial-gradient(circle at 80% 30%, rgba(255, 0, 255, 0.04), transparent 50%),
-    radial-gradient(circle at 50% 90%, rgba(0, 255, 180, 0.04), transparent 50%);
+    radial-gradient(circle at 20% 20%, rgba(0, 245, 255, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(255, 0, 255, 0.06), transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(0, 255, 180, 0.05), transparent 50%);
   z-index: -1;
-  pointer-events: none;
 }
 
 /* =========================
@@ -51,9 +49,8 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
 
-  background: url('assets/images/background.jpg') center/cover no-repeat fixed;
+  background: url('assets/images/background.jpg') center/cover no-repeat;
 }
 
 /* DARK SEO OVERLAY */
@@ -63,8 +60,8 @@ header::after {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(7, 11, 20, 0.55),
-    rgba(7, 11, 20, 0.92)
+    rgba(11, 18, 32, 0.55),
+    rgba(11, 18, 32, 0.75)
   );
 }
 
@@ -78,11 +75,8 @@ header .container {
 header h1 {
   font-size: 36px;
   color: #e5e7eb;
-  letter-spacing: 1px;
-  text-shadow:
-    0 0 10px rgba(0, 245, 255, 0.15);
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.12);
 }
-
 /* SUBTITLE */
 header p {
   color: #94a3b8;
@@ -200,20 +194,18 @@ li {
    CARD (SEO DASHBOARD BLOCK)
 ========================= */
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.15);
   border-radius: 14px;
-
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  padding: 20px;
   backdrop-filter: blur(10px);
-
   transition: 0.3s;
 }
 
 .card:hover {
   border-color: rgba(0, 245, 255, 0.25);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* =========================
