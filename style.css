@@ -227,8 +227,12 @@ footer {
   align-items: center;
 }
 
-#text-rotator {
-  color: #38bdf8;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+#logo-rotator {
+  width: 100%;
+  max-width: 500px; /* biar nggak terlalu gede */
+  height: 100px;
+
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
