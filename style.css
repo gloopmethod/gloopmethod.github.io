@@ -165,3 +165,14 @@ footer {
     padding: 30px 15px;
   }
 }
+
+.profile-img {
+  width: 120px;
+  aspect-ratio: 1 / 1; /* modern & aman */
+  object-fit: cover;
+
+  display: block;
+  margin: 20px auto;
+
+  border-radius: 50%;
+}
