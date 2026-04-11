@@ -33,10 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (logoEl) {
     const logos = [
-      "assets/logo1.png",
-      "assets/logo2.png",
-      "assets/logo3.png",
-      "assets/logo4.png"
+      "assets/images/text 1.png",
+      "assets/images/text 2.png",
+      "assets/images/text 3.png"
     ];
 
     let index = 0;
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         logoEl.style.opacity = 1;
       }, 300);
 
-    }, 2500);
+    }, 1500);
   }
 
 });
