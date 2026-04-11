@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (logoEl) {
     const logos = [
-      "assets/images/text 1.png",
-      "assets/images/text 2.png",
-      "assets/images/text 3.png"
+      "/assets/images/text 1.png",
+      "/assets/images/text 2.png",
+      "/assets/images/text 3.png"
     ];
 
     let index = 0;
