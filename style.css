@@ -228,11 +228,14 @@ footer {
 }
 
 #logo-rotator {
+  display: block;
   width: 100%;
-  max-width: 500px; /* biar nggak terlalu gede */
-  height: 100px;
+  max-width: 500px;
+
+  height: auto;           /* biar proporsional */
+  max-height: 100px;      /* batas tinggi, bukan dipaksa */
 
   object-fit: contain;
-  display: block;
-  margin: 0 auto;
+
+  margin: 40px auto;      /* kasih jarak atas-bawah */
 }
