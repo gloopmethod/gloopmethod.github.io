@@ -226,3 +226,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+#text-rotator {
+  color: #38bdf8;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
