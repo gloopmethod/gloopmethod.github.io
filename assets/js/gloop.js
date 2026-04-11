@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         logoEl.style.opacity = 1;
       }, 300);
 
-    }, 1800);
+    }, 2000);
   }
 
 });
