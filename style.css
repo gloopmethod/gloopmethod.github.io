@@ -247,3 +247,16 @@ h2 {
     0 0 10px rgba(0, 245, 255, 0.7);
   opacity: 0.95;
 }
+
+
+/* ========================= CARD FLEX FIX ========================= */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Dorong tombol ke bawah */
+.card .btn {
+  margin-top: auto;
+}
