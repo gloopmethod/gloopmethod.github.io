@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         textEl.classList.add("fade-in");
       }, 300);
 
-    }, 1800);
+    }, 1200);
   }
 
   /* ========================= LOGO ROTATOR ========================= */
