@@ -180,25 +180,30 @@ footer {
 /* ========================= LOGO SCROLL ========================= */
 .logo-section {
   overflow: hidden;
-  padding: 30px 0;
-  margin-top: 40px;
+  padding: 50px 0; /* lebih lega */
+  margin-top: 50px;
 }
 
 .logo-track {
   display: flex;
-  gap: 50px;
+  align-items: center;
+  gap: 80px; /* jarak lebih luas */
   width: max-content;
-  animation: scrollLogo 20s linear infinite;
+  animation: scrollLogo 25s linear infinite;
 }
 
 .logo-track img {
-  height: 40px;
-  opacity: 0.7;
-  transition: 0.3s;
+  height: 60px;       /* 🔥 BESARIN DI SINI */
+  width: auto;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
 }
 
 .logo-track img:hover {
   opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.08);
 }
 
 /* ANIMASI */
@@ -209,7 +214,4 @@ footer {
   to {
     transform: translateX(-50%);
   }
-}
-.logo-track:hover {
-  animation-play-state: paused;
 }
