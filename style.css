@@ -230,10 +230,10 @@ footer {
 #logo-rotator {
   display: block;
   width: 100%;
-  max-width: 380px;
+  max-width: 280px;
 
   height: auto;           /* biar proporsional */
-  max-height: 80px;      /* batas tinggi, bukan dipaksa */
+  max-height: 60px;      /* batas tinggi, bukan dipaksa */
 
   object-fit: contain;
 
