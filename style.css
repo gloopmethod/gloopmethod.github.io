@@ -215,3 +215,14 @@ footer {
     transform: translateX(-50%);
   }
 }
+
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
