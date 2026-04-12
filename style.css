@@ -32,16 +32,15 @@ body::after {
 
 body::before {
   top: 0;
-  background-image: url('/assets/images/gedung-sate.JPG');
-  background-position: top center;
+  background: url('assets/images/gedung-sate.jpg') no-repeat center top;
+  background-size: cover;
 }
 
 body::after {
   bottom: 0;
-  background-image: url('/assets/images/gedung-sate.JPG');
-  background-position: bottom center;
+  background: url('assets/images/gedung-sate.jpg') no-repeat center bottom;
+  background-size: cover;
 }
-
 /* ========================= CONTAINER ========================= */
 .container {
   max-width: 1100px;
