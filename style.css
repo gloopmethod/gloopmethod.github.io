@@ -82,6 +82,12 @@ header h1 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 6px;
+
+  color: #22d3ee;
+  text-shadow: 
+    0 0 6px #22d3ee,
+    0 0 12px #22d3ee,
+    0 0 24px #0ea5e9;
 }
 
 header p {
