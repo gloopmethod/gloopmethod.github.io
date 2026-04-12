@@ -33,13 +33,13 @@ body::after {
 
 body::before {
   top: 0;
-  background-image: url('/assets/images/gedung-sate.jpg');
+  background-image: url('assets/images/gedung-sate.jpg');
   background-position: top center;
 }
 
 body::after {
   bottom: 0;
-  background-image: url('/assets/images/gedung-sate.jpg');
+  background-image: url('assets/images/gedung-sate.jpg');
   background-position: bottom center;
 }
 
