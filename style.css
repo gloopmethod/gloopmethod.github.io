@@ -32,13 +32,13 @@ body::after {
 
 body::before {
   top: 0;
-  background: url('assets/images/gedung-sate.jpg') no-repeat center top;
+  background: url('/assets/images/gedung-sate.jpg') no-repeat center top;
   background-size: cover;
 }
 
 body::after {
   bottom: 0;
-  background: url('assets/images/gedung-sate.jpg') no-repeat center bottom;
+  background: url('/assets/images/gedung-sate.jpg') no-repeat center bottom;
   background-size: cover;
 }
 /* ========================= CONTAINER ========================= */
