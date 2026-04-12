@@ -237,9 +237,11 @@ footer {
 }
 
 .content-img {
-  margin: 30px auto 10px;
   display: block;
+  margin: 30px auto 10px;
   border-radius: 12px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ========================= LOGO SCROLL ========================= */
