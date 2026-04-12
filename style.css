@@ -12,6 +12,7 @@ body {
   color: #e2e8f0;
   line-height: 1.6;
   overflow-x: hidden;
+  padding-top: 100px;
 }
 
 /* ========================= DECOR ========================= */
@@ -25,19 +26,21 @@ body::after {
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%; /* 🔥 ini kunci */
+  background-size: cover;
   pointer-events: none;
   opacity: 0.4;
 }
 
 body::before {
   top: 0;
-  background-image: url('/assets/images/Gedung Sate.JPG');
+  background-image: url('/assets/images/Gedung-Sate.jpg');
+  background-position: top center;
 }
 
 body::after {
   bottom: 0;
-  background-image: url('/assets/images/Gedung Sate.JPG');
+  background-image: url('/assets/images/Gedung-Sate.jpg');
+  background-position: bottom center;
 }
 
 /* ========================= CONTAINER ========================= */
@@ -49,8 +52,17 @@ body::after {
 
 /* ========================= HEADER ========================= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 20px;
+
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
 }
 
 header h1 {
