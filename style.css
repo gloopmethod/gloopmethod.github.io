@@ -32,12 +32,12 @@ body::after {
 
 body::before {
   top: 0;
-  background-image: url('/assets/images/Gedung Sate.png');
+  background-image: url('/assets/images/Gedung Sate.JPG');
 }
 
 body::after {
   bottom: 0;
-  background-image: url('/assets/images/Gedung Sate.png');
+  background-image: url('/assets/images/Gedung Sate.JPG');
 }
 
 /* ========================= CONTAINER ========================= */
