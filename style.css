@@ -307,9 +307,9 @@ footer {
 
 /* ========================= STRONG (CLEAN EMPHASIS) ========================= */
 strong {
-  color: #7dd3fc;
+  color: #86efac; /* hijau muda */
   font-weight: 600;
-  text-shadow: 0 0 2px rgba(125, 211, 252, 0.25); /* sangat halus */
+  text-shadow: 0 0 2px rgba(134, 239, 172, 0.25); /* glow sangat halus */
 }
 
 /* ========================= HERO LINK (GREEN) ========================= */
