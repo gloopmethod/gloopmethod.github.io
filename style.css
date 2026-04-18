@@ -293,7 +293,7 @@ nav a:hover {
 /* ========================= RESPONSIVE ========================= */
 @media (max-width: 768px) {
   body {
-    padding-top: 0;
+    padding-top: 200px;
   }
 
   .banner {
