@@ -292,11 +292,15 @@ nav a:hover {
 
 /* ========================= RESPONSIVE ========================= */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 24px;
+  body {
+    padding-top: 140px; /* lebih kecil biar gak nabrak */
   }
 
-  .section {
-    padding: 30px 15px;
+  .banner {
+    padding-top: 40px; /* kurangi jarak hero */
+  }
+
+  #logo-rotator {
+    margin: 20px auto; /* biar gak terlalu turun */
   }
 }
