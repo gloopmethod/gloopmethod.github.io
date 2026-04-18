@@ -88,6 +88,15 @@ header p {
   font-size: 14px;
 }
 
+li {
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+li::marker {
+  color: #86efac; /* bullet jadi hijau */
+}
+
 /* ========================= NAV ========================= */
 nav {
   margin-top: 20px;
