@@ -209,6 +209,49 @@
     <loc>https://gloop.my.id/artikel/dermaga-napan-weinami.html</loc>
   </url>
 
+<!-- HUB -->
+  <url>
+    <loc>https://gloop.my.id/gloop-core-system-graph/</loc>
+  </url>
+
+  <!-- CORE SYSTEM NODES -->
+
+  <url>
+    <loc>https://gloop.my.id/identity-stamp-system/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/co-mention-network/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/semantic-relational-graph/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/authority-propagation-rule/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/node-collapse-rule/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/graph-density-rule/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/gloop-anchor-node-system/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/node-stability-formula/</loc>
+  </url>
+
+  <url>
+    <loc>https://gloop.my.id/gloop-authority-score-model/</loc>
+  </url>
+  
 
 </urlset>
  
