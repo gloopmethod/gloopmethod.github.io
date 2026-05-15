@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>G-Loop Graph Dashboard | Visual CM & RL Network</title>
+  <title>G-Loop Graph Dashboard | CM + RL System</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0b0f17;
-      color: #fff;
+      color: white;
     }
 
     header {
-      padding: 20px;
+      padding: 16px;
       text-align: center;
       border-bottom: 1px solid #222;
     }
 
     .wrap {
       display: flex;
-      height: calc(100vh - 80px);
+      height: calc(100vh - 70px);
     }
 
     .panel {
-      width: 280px;
+      width: 260px;
+      padding: 12px;
       border-right: 1px solid #222;
-      padding: 15px;
       overflow-y: auto;
+    }
+
+    .panel a {
+      color: #4da3ff;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      font-size: 14px;
     }
 
     .graph {
@@ -43,33 +51,32 @@
       height: 100%;
     }
 
+    .link {
+      stroke: #444;
+      stroke-width: 2;
+    }
+
     .node {
-      cursor: pointer;
       fill: #4da3ff;
+      cursor: pointer;
     }
 
     .node:hover {
       fill: #ffcc00;
     }
 
-    .link {
-      stroke: #555;
-      stroke-width: 2;
+    .label {
+      fill: white;
+      font-size: 10px;
+      font-weight: bold;
+      pointer-events: none;
     }
 
-    .title {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #aaa;
-    }
-
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .label-small {
+      fill: white;
+      font-size: 8px;
+      font-weight: bold;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -77,26 +84,30 @@
 <body>
 
 <header>
-  <h1>G-Loop Graph Dashboard</h1>
-  <p>Visualisasi CM (Co-Mention) & RL (Semantic Relation)</p>
+  <h2>G-Loop Graph Dashboard</h2>
+  <small>CM (Co-Mention) + RL (Semantic Relation)</small>
 </header>
 
 <div class="wrap">
 
-  <!-- SIDE PANEL -->
+  <!-- PANEL -->
   <div class="panel">
-    <div class="title">CORE NODES</div>
+    <strong>CORE NODES</strong>
 
-    <p><a href="/gloop-core-system-graph/">Hub System</a></p>
-    <p><a href="/identity-stamp-system/">Identity Stamp (S)</a></p>
-    <p><a href="/co-mention-network/">Co-Mention (CM)</a></p>
-    <p><a href="/semantic-relational-graph/">Semantic RL</a></p>
-    <p><a href="/authority-propagation-rule/">Propagation</a></p>
-    <p><a href="/node-collapse-rule/">Collapse</a></p>
-    <p><a href="/graph-density-rule/">Density</a></p>
-    <p><a href="/gloop-anchor-node-system/">Anchor</a></p>
-    <p><a href="/node-stability-formula/">Stability</a></p>
-    <p><a href="/gloop-authority-score-model/">Authority Score</a></p>
+    <a href="/gloop-core-system-graph/">Hub System</a>
+    <a href="/identity-stamp-system/">Identity Stamp</a>
+    <a href="/co-mention-network/">Co-Mention</a>
+    <a href="/semantic-relational-graph/">Semantic RL</a>
+    <a href="/authority-propagation-rule/">Propagation</a>
+    <a href="/node-collapse-rule/">Collapse</a>
+    <a href="/graph-density-rule/">Density</a>
+    <a href="/gloop-anchor-node-system/">Anchor</a>
+    <a href="/node-stability-formula/">Stability</a>
+    <a href="/gloop-authority-score-model/">Authority Score</a>
+
+    <br/><br/>
+    <strong>CONTENT</strong>
+    <a href="/artikel/dermaga-napan-weinami.html">Dermaga Napan Weinami</a>
   </div>
 
   <!-- GRAPH -->
@@ -104,44 +115,41 @@
 
     <svg viewBox="0 0 800 500">
 
-      <!-- LINKS (CM + RL simplified) -->
+      <!-- LINKS -->
       <line class="link" x1="400" y1="250" x2="200" y2="120"/>
       <line class="link" x1="400" y1="250" x2="600" y2="120"/>
       <line class="link" x1="400" y1="250" x2="200" y2="380"/>
       <line class="link" x1="400" y1="250" x2="600" y2="380"/>
-
       <line class="link" x1="200" y1="120" x2="600" y2="120"/>
       <line class="link" x1="200" y1="380" x2="600" y2="380"/>
 
       <!-- HUB -->
-      <circle class="node" cx="400" cy="250" r="22">
-        <title>G-Loop Hub</title>
-      </circle>
+      <circle class="node" cx="400" cy="250" r="24"></circle>
+      <text x="400" y="255" text-anchor="middle" class="label">HUB</text>
 
-      <!-- NODES -->
-      <circle class="node" cx="200" cy="120" r="16">
-        <title>Identity Stamp</title>
-      </circle>
+      <!-- STAMP -->
+      <circle class="node" cx="200" cy="120" r="16"></circle>
+      <text x="200" y="125" text-anchor="middle" class="label-small">S</text>
 
-      <circle class="node" cx="600" cy="120" r="16">
-        <title>Co-Mention</title>
-      </circle>
+      <!-- CM -->
+      <circle class="node" cx="600" cy="120" r="16"></circle>
+      <text x="600" y="125" text-anchor="middle" class="label-small">CM</text>
 
-      <circle class="node" cx="200" cy="380" r="16">
-        <title>Semantic RL</title>
-      </circle>
+      <!-- RL -->
+      <circle class="node" cx="200" cy="380" r="16"></circle>
+      <text x="200" y="385" text-anchor="middle" class="label-small">RL</text>
 
-      <circle class="node" cx="600" cy="380" r="16">
-        <title>Propagation</title>
-      </circle>
+      <!-- PROPAGATION -->
+      <circle class="node" cx="600" cy="380" r="16"></circle>
+      <text x="600" y="385" text-anchor="middle" class="label-small">AP</text>
 
-      <circle class="node" cx="400" cy="80" r="14">
-        <title>Anchor</title>
-      </circle>
+      <!-- ANCHOR -->
+      <circle class="node" cx="400" cy="80" r="14"></circle>
+      <text x="400" y="85" text-anchor="middle" class="label-small">A</text>
 
-      <circle class="node" cx="400" cy="420" r="14">
-        <title>Collapse</title>
-      </circle>
+      <!-- COLLAPSE -->
+      <circle class="node" cx="400" cy="420" r="14"></circle>
+      <text x="400" y="425" text-anchor="middle" class="label-small">CL</text>
 
     </svg>
 
