@@ -314,3 +314,9 @@ nav a:hover {
     max-height: 50px;
   }
 }
+
+.footer-tags {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 8px;
+}
